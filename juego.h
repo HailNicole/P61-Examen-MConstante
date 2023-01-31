@@ -22,6 +22,9 @@ public:
     Juego(QWidget *parent = nullptr);
     ~Juego();
 
+protected:
+    void paintEvent(QPaintEvent *event) override;
+
 private slots:
     void on_btnArriba_released();
 
@@ -38,6 +41,11 @@ private slots:
 private:
     Ui::Juego *ui;
     Circulo *m_circulo;
+    Configuracion *m_config;
+    QImage *lienzo;
+    QPainter *m_painter2;
+    QColor m_col;
+    int m_dim;
     void dibujar_circulo();
 };
 #endif // JUEGO_H

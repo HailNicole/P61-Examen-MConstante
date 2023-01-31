@@ -6,7 +6,7 @@ Configuracion::Configuracion(QWidget *parent) :
     ui(new Ui::Configuracion)
 {
     ui->setupUi(this);
-    m_color.setRgb(165,29,45);
+     m_color.setRgb(m_color.red(),m_color.green(), m_color.blue());
     setWidgetColor();
 }
 
@@ -49,3 +49,17 @@ int Configuracion::dimension() const
     return m_dimension;
 }
 
+
+void Configuracion::on_inDimension_sliderReleased()
+{
+    m_dimension = ui->inDimension->value();
+}
+
+
+void Configuracion::on_btnColor_clicked()
+{
+    m_color = QColorDialog::getColor(m_color,
+                                       this,
+                                       "Color del pincel");
+    m_color.setRgb(m_color.red(),m_color.green(), m_color.blue());
+}

@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>recursos/circulo.png</file>
+    </qresource>
+</RCC>

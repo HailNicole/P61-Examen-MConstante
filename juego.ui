@@ -13,6 +13,13 @@
   <property name="windowTitle">
    <string>Juego</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="recursos.qrc">
+    <normaloff>:/recursos/circulo.png</normaloff>:/recursos/circulo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">border-color: rgb(220, 138, 221);</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
@@ -55,6 +62,9 @@
        </item>
        <item>
         <widget class="QWidget" name="widget_2" native="true">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 190, 111);</string>
+         </property>
          <layout class="QGridLayout" name="gridLayout">
           <item row="3" column="1">
            <widget class="QPushButton" name="btnAbajo">
@@ -136,6 +146,8 @@
    </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="recursos.qrc"/>
+ </resources>
  <connections/>
 </ui>
