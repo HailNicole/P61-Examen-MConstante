@@ -3,6 +3,10 @@
 
 #include <QMainWindow>
 #include <QDebug>
+#include <QImage>
+#include <QPainter>
+#include <QMessageBox>
+#include <QPaintEvent>
 #include "configuracion.h"
 #include "circulo.h"
 
@@ -34,5 +38,6 @@ private slots:
 private:
     Ui::Juego *ui;
     Circulo *m_circulo;
+    void dibujar_circulo();
 };
 #endif // JUEGO_H

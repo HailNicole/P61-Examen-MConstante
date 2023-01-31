@@ -127,7 +127,7 @@
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionConfigraci0n">
    <property name="text">
-    <string>Configración</string>
+    <string>Configuración</string>
    </property>
   </action>
   <action name="actionSalir">

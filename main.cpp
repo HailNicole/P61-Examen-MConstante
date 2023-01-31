@@ -1,3 +1,6 @@
+//Nicole Constante
+//1752689065
+
 #include "juego.h"
 
 #include <QApplication>
