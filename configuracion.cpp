@@ -6,7 +6,7 @@ Configuracion::Configuracion(QWidget *parent) :
     ui(new Ui::Configuracion)
 {
     ui->setupUi(this);
-     m_color.setRgb(m_color.red(),m_color.green(), m_color.blue());
+    m_color.setRgb(m_color.red(),m_color.green(), m_color.blue());
     setWidgetColor();
 }
 
